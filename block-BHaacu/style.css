@@ -1,0 +1,539 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.6;
+  font-family: "Raleway", sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/* Customized styles */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+}
+.padding {
+  padding: 5rem 0;
+}
+.margin {
+  margin: 3rem 0;
+}
+.btn {
+  padding: 0.7rem 1.4rem;
+  border: 1px solid #dc3c45;
+  background-color: white;
+  border-radius: 40px;
+  color: #dc3c45;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+/* Flex */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-start {
+  align-items: flex-start;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-20 {
+  flex: 0 1 20%;
+}
+.flex-30 {
+  flex: 0 1 30%;
+}
+.flex-45 {
+  flex: 0 1 45%;
+}
+
+/* Header */
+.header {
+  background-color: #dc3c45;
+  color: white;
+  padding: 1.2rem;
+}
+.media-icons a,
+.contact-num a {
+  color: white;
+  padding-right: 1.5rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #f2f2f2;
+  height: 4rem;
+}
+.brand-name {
+  font-size: 2rem;
+  font-weight: 900;
+  color: black;
+}
+.brand-name span {
+  color: #dc3c45;
+  padding-right: 0.2rem;
+}
+.navs a {
+  color: #333333;
+  font-weight: 600;
+}
+.navs div {
+  padding-left: 2rem;
+  padding: 0 0.5rem;
+}
+.active {
+  background-color: #eb5f61;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.active a {
+  color: white;
+}
+/* Hero section */
+.hero-bg-img {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../block-BHaacu/assets/media/banner-1.jpg);
+  background-size: cover;
+}
+.hero-heading {
+  padding-top: 15rem;
+}
+.hero-heading h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.hero-heading p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1.5rem 0;
+}
+.hero-heading button {
+  padding: 0.5rem 1rem;
+  background-color: #eb5f61;
+  border-style: none;
+  border-radius: 40px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.hero-heading button:hover,
+.hero-heading button:focus {
+  background-color: black;
+  color: white;
+}
+/* Services section */
+.section-heading {
+  text-align: center;
+  padding-top: 2rem;
+}
+.section-heading h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  padding-bottom: 1.5rem;
+}
+.card {
+  border: 1px solid black;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin: 0 1rem;
+}
+.card-img {
+  width: 100px;
+  height: 100px;
+}
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.card p {
+  padding: 1.5rem 0;
+}
+
+/* solution section */
+.solution {
+  text-align: center;
+  background-color: #f8f9fa;
+  margin-bottom: 5rem;
+}
+.solution p {
+  padding-bottom: 2rem;
+}
+.solution .section-heading {
+  width: 50rem;
+  margin: 0 auto;
+}
+/* team section */
+
+.team-card {
+  text-align: center;
+}
+.team h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.team p {
+  padding: 1.5rem 0;
+}
+.team-img {
+  font-size: 0;
+}
+.team-img img {
+  width: 100%;
+  border-radius: 4px;
+}
+.sub-team {
+  margin-top: 2.5rem;
+  background-color: #dc3c45;
+  padding: 2.5rem 0;
+}
+.sub-team .text {
+  width: 60%;
+  color: white;
+}
+.text h4 {
+  font-size: 1.5rem;
+}
+.text p {
+  padding: 0.5rem 0;
+}
+.sub-team .btn {
+  color: white;
+  background-color: #dc3c45;
+  border: 1px solid white;
+}
+.sub-team-2 .team-card {
+  text-align: left;
+}
+
+/* our clients section */
+.clients {
+  background-color: #f8f9fa;
+}
+.clients-parent img {
+  filter: grayscale(100%);
+  width: 80%;
+}
+.clients-parent img:hover {
+  filter: none;
+}
+
+/* Footer */
+.footer {
+  background-color: #343a40;
+  line-height: 1.8;
+}
+.footer h4 {
+  color: #bdbdbd;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.footer li a {
+  color: #bdbdbd;
+}
+.copyright {
+  color: #bdbdbd;
+  text-align: center;
+  padding-top: 2rem;
+}
+.copyright span {
+  font-weight: 500;
+}
+
+/* About us page styles */
+.about-us {
+  background-color: #dc3c45;
+  text-align: center;
+  color: white;
+}
+.about-us h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.about-us-team a {
+  color: #dc3c45;
+  font-weight: 500;
+}
+.about-us-team h3 {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+.about-us-team-img img {
+  width: 25rem;
+}
+.about-us-icons .fa-rocket,
+.fa-globe,
+.fa-eye {
+  margin-right: 2rem;
+  color: #343a40;
+}
+.about-us-icons a {
+  font-size: 3rem;
+}
+.row {
+  margin: 1.5rem 0;
+}
+.about-us-our-team {
+  background-color: #f8f9fa;
+}
+.our-team-card {
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  width: 300px;
+  text-align: center;
+  background-color: white;
+}
+.our-team-card h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.our-team-card p {
+  color: #dc3c45;
+}
+.our-team-card img {
+  width: 200px;
+}
+.about-us-best-solutions {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.about-us-best-solutions .btn {
+  background-color: #dc3c45;
+  color: white;
+  margin: 1.5rem 0;
+}
+
+/* Services page styles */
+.our-products {
+  background-color: #f8f9fa;
+}
+.our-products-card img {
+  width: 200px;
+}
+.our-products-card h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.best-deals {
+  background-color: #dc3c45;
+  color: white;
+}
+.best-deals .btn {
+  background-color: #dc3c45;
+  color: white;
+  border: 1px solid white;
+}
+.best-deals span {
+  padding: 0 1.5rem;
+}
+.best-award .section-heading {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.best-award h3 {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+/* Contact Us Page styles */
+.contact-icons {
+  background-color: #f8f9fa;
+  text-align: center;
+}
+.contact-icons p {
+  width: 60%;
+  margin: 0 auto;
+}
+.icon-circle a {
+  font-size: 2.5rem;
+  color: #dc3c45;
+}
+.icon-circle {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons-parent {
+  padding-top: 2rem;
+}
+.icons-parent h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 auto;
+}
+.let-us-know .section-heading {
+  width: 60%;
+  margin: 0 auto;
+}
+.contact-parent {
+  padding: 2rem 0;
+}
+.contact-us {
+  text-align: center;
+  width: 35rem;
+  height: 450px;
+}
+input,
+textarea {
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+}
+fieldset input,
+textarea {
+  display: block;
+  width: 100%;
+}
+.contact-us .btn {
+  background-color: #dc3c45;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100vw;
+  }
+  .mb-flex-wrap {
+    flex-wrap: wrap;
+  }
+}
